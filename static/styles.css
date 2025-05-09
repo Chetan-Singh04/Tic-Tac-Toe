@@ -1,0 +1,90 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Header */
+h1 {
+    font-size: 3em;
+    color: #fff;
+    margin: 0.5em 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Board Container */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-gap: 10px;
+    margin: 20px auto;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual Cells */
+.cell {
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid #f6d365;
+    font-size: 2.5em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #fda085;
+    transform: scale(1.1);
+}
+
+.cell.taken {
+    background-color: #ddd;
+    color: #555;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Reset Button */
+#reset {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#reset:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Message */
+footer {
+    margin-top: 30px;
+    font-size: 1em;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
