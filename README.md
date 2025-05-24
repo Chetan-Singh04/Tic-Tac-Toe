@@ -1,7 +1,5 @@
 # Tic-Tac-Toe Web Game
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 This is a basic Tic-Tac-Toe game implemented using the Flask web framework in Python. You can play the classic game against another human player directly in your web browser.
 
 ## Table of Contents
